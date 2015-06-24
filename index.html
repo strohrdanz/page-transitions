@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Transitions</title>
+    <link rel="stylesheet" href="css/animation.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+
+<body>
+
+<div class="pt-wrapper">
+
+    <div class="pt-trigger-container right">
+        <button class="pt-trigger next" data-animation="54" data-goto="-1">
+            <img src="img/arrow-right.png" alt="Next">
+        </button>
+    </div>
+
+    <div class="pt-trigger-container left">
+        <button class="pt-trigger prev" data-animation="55" data-goto="-2">
+            <img src="img/arrow-left.png" alt="Next">
+        </button>
+    </div>
+    <div class="pt-page pt-page-1"></div>
+    <div class="pt-page pt-page-2"></div>
+    <div class="pt-page pt-page-3"></div>
+    <div class="pt-page pt-page-4"></div>
+    <div class="pt-page pt-page-5"></div>
+    <div class="pt-page pt-page-6"></div>
+    <div class="pt-page pt-page-7"></div>
+
+    <div class="filmstrip clearfix"></div>
+
+</div>
+
+<div class="pt-message">
+    <p>Your browser does not support CSS animations.</p>
+</div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.mobile-events.js"></script>
+<script src="js/transition.js"></script>
+<!--[if IE]>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.next').attr('data-animation',"7");
+    $('.prev').attr('data-animation',"8");
+    console.log('IE');  
+})
+</script>
+<![endif]-->
+</body>
+</html>
